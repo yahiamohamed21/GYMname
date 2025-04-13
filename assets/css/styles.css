@@ -895,7 +895,6 @@ display: flex;
   display: inline-flex;
   width: 350px;
   height: 130px;
-  border: 2px solid var(--first-color-light);
 }
 
 .yahia{
