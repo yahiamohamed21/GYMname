@@ -734,13 +734,11 @@ box-shadow: 1px 1px 10px 3px var(--first-color-dark);
   display: grid;
   flex-wrap: wrap;
 }
+ 
+
 .coach__card{
   display: grid;
-  
-}
-
-
-.coach__card{
+  margin-bottom: 50px;
   row-gap: 2rem;
   background-color: hsla(79, 6%, 64%,.07);
   width: 350px;
@@ -1098,10 +1096,8 @@ height: 255px;
 
 .coaches{
   display:grid;
-  grid-template-columns: repeat(2,1fr);
-  justify-content:  center;
+  grid-template-columns: repeat(1,290px);
   flex-direction:  row;
-  align-items: center;
 }
 
 .footer__content{
