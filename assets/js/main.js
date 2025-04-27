@@ -84,14 +84,14 @@ const scrollUp = () => {
 const sr =ScrollReveal({
     origin:'top',
     distance:'60px',
-    duration:750,
-    delay:400,
+    duration:950,
+    delay:350,
 })
 
 sr.reveal(`.home__data , .footer__container , .footer__group`)
 sr.reveal(`.home__img`,{delay:700, origin:'bottom'})
 sr.reveal(`.logos__img , .program__card , .pricing__card`,{interval:100})
-sr.reveal(`.choose__img , .calculate__content `,{origin:'left'})
+sr.reveal(`.choose__img , .calculate__content,.coach__container  `,{origin:'left'})
 sr.reveal(`.choose__content, .calculate__img `,{origin:'right'})
 sr.reveal(`.yahia`,{origin:'bottom'})
 
