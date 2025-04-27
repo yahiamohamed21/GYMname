@@ -590,7 +590,7 @@ text-align: center;
 
 /*                PRICING                  */
 .pricing__container{
-  grid-template-columns: 385px;
+  grid-template-columns: 345px;
   justify-content: center;
   row-gap: 3rem;
 }
