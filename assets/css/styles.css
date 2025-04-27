@@ -1164,11 +1164,12 @@ height: 255px;
 
 
 .coaches{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  justify-content:  center;
-  flex-direction:  row;
-  align-items: center;
+  display: grid;
+          grid-template-columns: repeat(2, 373px);
+          /* justify-content: flex-end; */
+          align-items: center;
+          margin-right: 65px;
+  
 }
 
 .calculate__container{
@@ -1420,11 +1421,9 @@ padding: 0 3rem;
 }
 
 .coaches{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  justify-content:  center;
-  flex-direction:  row;
-  align-items: center;
+  grid-template-columns: repeat(3,380px);
+  gap: 1rem 2rem;
+  margin-left: 100px;
 }
 
 
