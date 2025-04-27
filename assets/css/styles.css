@@ -724,34 +724,36 @@ box-shadow: 1px 1px 10px 3px var(--first-color-dark);
 
 /* coaches >>> c.osama ++++ c.abdo */
 .coach__container{
-  display: inline-flex;
-  grid-template-columns: 385px;
+  display:  grid;
+  grid-template-columns:  repeat(3,1fr);
   justify-content: center;
-  margin-left: 9px;
+  align-content: center;
 }
 
-.coaches{
-  display: grid;
-  flex-wrap: wrap;
+
+  .coaches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;  
+    align-items: center;    
 }
- 
+
 
 .coach__card{
   display: grid;
-  margin-bottom: 50px;
-  row-gap: 2rem;
+  margin-bottom: 20px;
+  row-gap: 1rem;
   background-color: hsla(79, 6%, 64%,.07);
   width: 350px;
   height: 670px;
   position: relative;
   transition: 1s;
   margin-top: 20px;
-  margin-right: 25px;
 }
 
 .coach__card:hover{
 transform: scale(1.05 ,1.05);
-border-radius: 50px;
+border-radius: 20px;
 border-top-right-radius: 0;
 border-bottom-left-radius: 0;
 box-shadow: 1px 1px 12px 5px var(--first-color-dark);
@@ -1086,18 +1088,19 @@ height: 255px;
 }
 
 .pricing__container{
-  grid-template-columns: 2250px;
+  grid-template-columns: repeat(1,1fr);
 }
 
 
 .pricing__card{
-  padding: 1.5rem;
+  padding: 1rem;
 }
-
-.coaches{
-  display:grid;
-  grid-template-columns: repeat(1,290px);
-  flex-direction:  row;
+.coaches {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
 }
 
 .footer__content{
@@ -1153,19 +1156,15 @@ height: 255px;
 }
 
 .pricing__container{
-  grid-template-columns:  repeat(2  ,285px);
+  grid-template-columns:  repeat(2,1fr);
   gap: 3rem;
 
 }
 
 
 .coaches{
-  display: grid;
-          grid-template-columns: repeat(2, 373px);
-          /* justify-content: flex-end; */
-          align-items: center;
-          margin-right: 65px;
-  
+  grid-template-columns:  repeat(2,1fr);
+  gap: 3rem;
 }
 
 .calculate__container{
@@ -1177,7 +1176,7 @@ height: 255px;
 
 .calculate__form{
   grid-template-columns: repeat(2,1fr);
-  column-gap: 1.5rem;
+  /* column-gap: 1rem; */
 }
 
 
@@ -1443,3 +1442,15 @@ padding: 0 3rem;
 
 }
 
+@media (min-width: 600px) {
+  .coaches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* لما الشاشة تبقى ديسكتوب */
+@media (min-width: 1024px) {
+  .coaches {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
