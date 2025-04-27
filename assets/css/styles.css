@@ -1418,7 +1418,6 @@ padding: 0 3rem;
 .coaches{
   grid-template-columns: repeat(3,380px);
   gap: 1rem 2rem;
-  margin-left: 100px;
 }
 
 
@@ -1448,7 +1447,7 @@ padding: 0 3rem;
   }
 }
 
-/* لما الشاشة تبقى ديسكتوب */
+
 @media (min-width: 1024px) {
   .coaches {
     grid-template-columns: repeat(3, 1fr);
