@@ -727,7 +727,8 @@ box-shadow: 1px 1px 10px 3px var(--first-color-dark);
   display: inline-flex;
   grid-template-columns: 385px;
   justify-content: center;
-  margin-right: 22px;
+  margin-left: -20px;
+
 }
 
 .coaches{
